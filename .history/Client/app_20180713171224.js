@@ -27,3 +27,6 @@ myApp.config(["$routeProvider","$locationProvider", function ($routeProvider,$lo
     $locationProvider.hashPrefix('');
 }]);
 
+
+myApp.controller('empController', empController);
+    myApp.controller('addEmp', addEmp);

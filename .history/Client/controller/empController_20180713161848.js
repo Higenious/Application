@@ -6,6 +6,13 @@ myApp.controller('empController', ['$scope', '$http', '$locationProvider', '$rou
 
 
 
+<p>Employee  Id: <input type="text" ng-model="id" ></p>
+    <p>Employee  Name: <input type="text" ng-model="name" ></p>
+    <p>Employee  Address : <input type="text" ng-model="address" ></p>
+    <p>Employee  DOB: <input type="text" ng-model="dob" ></p>
+    <p>Employee  Image: <input type="text" ng-model="image" ></p>
+    <p>Employee  Phone: <input type="number" ng-model="phone" ></p>
+    <p>Employee  Email: <input type="email" ng-model="email" ></p>
     $scope.SendData = function () {
         console.log('sendata function called...');
         ///$scope.serviceurl = getHost.host();

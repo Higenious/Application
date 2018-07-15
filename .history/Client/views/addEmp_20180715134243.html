@@ -1,0 +1,41 @@
+<!-- <div class=".container">
+    <h3>Add Employee Here</h3><hr/>
+
+    <p>Employee  Id:       <input type="text"   ng-model="id"></p>  
+    <p>Employee  Name:     <input type="text" ng-model="name" ></p>
+    <p>Employee  Address : <input type="text" ng-model="address" ></p>
+    <p>Employee  DOB:      <input type="text" ng-model="dob" ></p>
+    <p>Employee  Image: <input type="text" ng-model="image" ></p>
+    <p>Employee  Phone: <input type="number" ng-model="phone" ></p>
+    <p>Employee  Email: <input type="email" ng-model="email" ></p>
+
+    <button type="button" ng-controller="addEmp"  ng-app= "myApp" ng-click="SendData()" class="btn btn-primary">Submit</button>
+</div>
+    <hr />
+        
+  </div>
+   -->
+
+
+   <div id="sidebar-info">
+        <form name="contact-form" action="formprocess.php" method="post" target="ninja-frame">
+            <h1>By Phone</h1>
+            <p id="by-phone">XXX-XXX-XXXX</p>
+            <h1>By Email</h1>
+            <p id="form-row">Name</p>
+            <input name="name" id="name" type="text" class="user-input" value="">
+            <p id="form-row">Email</p>
+            <input name="email" id="email" type="text" class="user-input" value="">
+            <p id="form-row">Message</p>
+            <textarea name="message" id="message" class="user-input" rows="10" maxlength="1500"></textarea>
+            <p>*Please fill out every field</p>
+            <input type="submit" value="Submit" id="submit" onclick="submitForm()">
+    
+            <script>
+                function submitForm() {
+                document.contact-form.submit();
+                document.contact-form.reset();
+                }
+            </script>
+        </form>
+    </div>

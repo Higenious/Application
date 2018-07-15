@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('empController', ['$scope', '$http', '$locationProvider', '$routeParams', function ($scope, FileSaver, $http, getHost, $locationProvider, $routeParams) {
-    console.log('empController loaded...');
+myApp.controller('addEmp', ['$scope', '$http', function ($scope, $http, getHost) {
+    console.log('addEmp loaded...');
     $scope.serviceurl = getHost.host();
 
 

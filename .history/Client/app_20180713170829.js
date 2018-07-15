@@ -12,7 +12,7 @@ myApp.config(["$routeProvider","$locationProvider", function ($routeProvider,$lo
         })
         .when("/emp/add", {
             templateUrl: "views/addEmp.html",
-            controller:'addEmp'
+            controller:'addEmp.js'
         }) 
         .when("/emp/remove", {
             templateUrl: "views/rmEmp.html",
@@ -27,3 +27,6 @@ myApp.config(["$routeProvider","$locationProvider", function ($routeProvider,$lo
     $locationProvider.hashPrefix('');
 }]);
 
+
+myApp.controller('empController', empController),
+    controller('addEmp', addEmp);

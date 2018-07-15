@@ -12,7 +12,7 @@ myApp.config(["$routeProvider","$locationProvider", function ($routeProvider,$lo
         })
         .when("/emp/add", {
             templateUrl: "views/addEmp.html",
-            controller:'addEmp'
+            controller:'controller/empController.js'
         }) 
         .when("/emp/remove", {
             templateUrl: "views/rmEmp.html",

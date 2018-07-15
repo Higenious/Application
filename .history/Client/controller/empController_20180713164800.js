@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('empController', ['$scope', '$http', '$locationProvider', '$routeParams', function ($scope, FileSaver, $http, getHost, $locationProvider, $routeParams) {
+myApp.controller('addcontrol', ['$scope', '$http', '$locationProvider', '$routeParams', function ($scope, FileSaver, $http, getHost, $locationProvider, $routeParams) {
     console.log('empController loaded...');
     $scope.serviceurl = getHost.host();
 
